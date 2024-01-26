@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+main {
+  font-size: 20px;
+  width: 800px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 25% 15% 25% 35%;
+  grid-template-rows: [uno]25%[dos]25%[tres]25%[cuatro]25%[cinco];
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.salida :first-child {
+  font-weight: bold;
+}
+
+.llegada :first-child {
+  font-weight: bold;
+}
+
+.precio {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.precio :last-child {
+  font-weight: bold;
+}
