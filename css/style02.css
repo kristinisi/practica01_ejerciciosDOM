@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.contenedor {
+  width: 600px;
+  height: 550px;
+  margin: auto;
+}
+
+.principal {
+  width: 100%;
+  height: 400px;
+  background-size: 100%;
+}
+
+.imagen {
+  width: 24.49%;
+  height: 150px;
+  margin-top: 20px;
+  display: inline-block;
+  background-size: 160%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

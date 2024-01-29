@@ -37,6 +37,7 @@ main > div {
 .precio {
   border: 1px solid lightgray;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .precio :last-child {
