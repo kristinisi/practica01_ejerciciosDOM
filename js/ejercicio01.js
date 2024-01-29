@@ -37,7 +37,6 @@ for (let precio of precios) {
       info[2].textContent +
       " - Precio " +
       info[3].textContent;
-    divRuta.style.fontSize = "20px";
 
     rutaActual = divRuta;
 
