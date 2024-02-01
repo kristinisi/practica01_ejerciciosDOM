@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+
+#contenedor {
+  background-color: white;
+  width: 80vh;
+  height: 40vh;
+  margin: auto;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 16px;
+}
+
+table {
+  margin: auto;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+th {
+  padding: 0px 25px 0px 25px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.borrar {
+  background-color: tomato;
+}
