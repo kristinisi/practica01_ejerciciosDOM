@@ -1,5 +1,6 @@
 let eliminar = document.querySelectorAll(".borrar");
 let jugadores = document.querySelector(".jugadores");
+let jugadoresEliminar = document.querySelectorAll(".jugadores tr");
 let eliminarTodo = document.getElementById("eliminarTodo");
 let datos = document.createElement("div");
 datos.classList.add("datos");
@@ -42,8 +43,21 @@ jugadores.addEventListener("dblclick", function (event) {
 
   if (fila.style.backgroundColor === "") {
     //modificamos el estilo
-    fila.style.backgroundColor = "gray";
+    fila.style.backgroundColor = "lightgray";
   } else {
     fila.style.backgroundColor = "";
   }
+});
+
+//tercer evento, dando al botón eliminar todo, eliminamos todos los datos
+eliminarTodo.addEventListener("click", function (event) {
+  ///verificamos si el click ha sido en el boton
+  if (event.target.id.includes("borrar")) {
+  }
+  for (let jugador of jugadoresEliminar) {
+    if (jugador.style.backgroundColor === "lightgray") {
+      jugador.remove();
+    }
+  }
+  datos.remove();
 });
