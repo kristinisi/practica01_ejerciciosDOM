@@ -74,9 +74,6 @@ jugadores.addEventListener("dblclick", function (event) {
 
 //tercer evento, dando al botón eliminar todo, eliminamos todos los datos
 eliminarTodo.addEventListener("click", function (event) {
-  ///verificamos si el click ha sido en el boton
-  if (event.target.id.includes("borrar")) {
-  }
   for (let jugador of jugadoresEliminar) {
     if (jugador.style.backgroundColor === "lightgray") {
       jugador.remove();
@@ -84,4 +81,18 @@ eliminarTodo.addEventListener("click", function (event) {
   }
   datos.remove();
   arr = [];
+});
+
+//tercer evento, dando al botón eliminar todo, eliminamos todos los datos
+document.addEventListener("keydown", function (event) {
+  console.log(event.code);
+  if (event.code === "Delete") {
+    for (let jugador of jugadoresEliminar) {
+      if (jugador.style.backgroundColor === "lightgray") {
+        jugador.remove();
+      }
+    }
+    datos.remove();
+    arr = [];
+  }
 });
